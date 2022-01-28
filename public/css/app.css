@@ -642,6 +642,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
 .align-middle {
   vertical-align: middle;
 }
@@ -707,6 +715,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(234 88 12 / var(--tw-text-opacity));
 }
+.text-orange-700 {
+  --tw-text-opacity: 1;
+  color: rgb(194 65 12 / var(--tw-text-opacity));
+}
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -752,6 +764,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .shadow-orange-600\/50 {
   --tw-shadow-color: rgb(234 88 12 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.shadow-orange-700\/50 {
+  --tw-shadow-color: rgb(194 65 12 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.shadow-orange-700 {
+  --tw-shadow-color: #c2410c;
   --tw-shadow: var(--tw-shadow-colored);
 }
 .ring-gray-300 {
@@ -839,6 +859,52 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:justify-between {
     justify-content: space-between;
+  }
+
+  .sm\:p-20 {
+    padding: 5rem;
+  }
+}
+@media (min-width: 768px) {
+
+  .md\:p-24 {
+    padding: 6rem;
+  }
+
+  .md\:p-20 {
+    padding: 5rem;
+  }
+
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+@media (min-width: 1024px) {
+
+  .lg\:p-28 {
+    padding: 7rem;
+  }
+}
+@media (min-width: 1280px) {
+
+  .xl\:p-28 {
+    padding: 7rem;
+  }
+
+  .xl\:py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .xl\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
 
