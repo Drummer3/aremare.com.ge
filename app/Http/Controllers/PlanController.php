@@ -13,7 +13,7 @@ class PlanController extends Controller
     // 
     public function plan_details($id)
     {
-        include_once(storage_path('app/plans.php'));
+        include_once(storage_path('app/public/plans.php'));
         $plan = $plans[app()->getLocale()][$id];
         $plan['name'] = $id;
         return view('pages.plans.individual')->with('plan', $plan);

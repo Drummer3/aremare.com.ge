@@ -12,7 +12,7 @@ class WelcomeController extends Controller
     // 
     public function welcome()
     {
-        include_once (storage_path('app/plans.php'));
+        include_once (storage_path('app/public/plans.php'));
         return view('welcome')->with('plans', $plans);
     }
 }
