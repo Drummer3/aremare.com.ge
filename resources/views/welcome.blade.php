@@ -12,9 +12,11 @@
     @endif
 
 
-    <p class="text-3xl sm:text-4xl text-center">
+    <p class="text-2xl sm:text-4xl text-center">
         {{ __('content.manage_your') }}
-        <span id="word_switcher"></span>
+        <span>
+            {{ __('content.business') }}/{{ __('content.enterprise') }}
+        </span>
         <br>
         {{ __('content.with_modern_tech') }}
     </p>
@@ -37,9 +39,9 @@
         var options = {
             strings: ['{{ __('content.business') }}', '{{ __('content.enterprise') }}'],
             startDelay: 0,
-            backDelay: 3000,
-            typeSpeed: 50,
-            backSpeed: 50,
+            backDelay: 5000,
+            typeSpeed: 75,
+            backSpeed: 75,
             loop: true,
             showCursor: false,
             // fadeOut: true
