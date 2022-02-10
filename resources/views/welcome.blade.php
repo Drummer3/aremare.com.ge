@@ -13,27 +13,56 @@
 
 
     <p class="text-2xl sm:text-4xl text-center">
-        {{ __('content.manage_your') }}
-        <span>
-            {{ __('content.business') }}/{{ __('content.enterprise') }}
-        </span>
-        <br>
-        {{ __('content.with_modern_tech') }}
+        {{ __('მართე შენი ბიზნესი ეფექტურად და მარტივად თანამედროვე ტექნოლოგიების გამოყენებით') }}
     </p>
 
     <div class="card">
-        <p class="text-xl text-center">
-            {{ __('content.what_we_offer') }}
-            <span class="font-bold">{{ __('content.human_resources') }}, {{ __('content.assets') }} {{ __('content.and_many_other') }}.</span>
-            <br>
-            {{ __('content.buzz_words') }}
+        <p class="text-xl text-center font-bold">
+            {{ __('ჩვენ გთავაზობთ ბიზნესის კომფორტულად და მარტივად სამართავად საჭირო ხელსაწყოებს') }}:
+        </p>
+        <ul class="list-disc list-inside mt-6 space-y-3 max-w-xl mx-auto">
+            <li>{{ __('ადამიანური რესურსების ელექტრონული მართვა') }}</li>
+            <li>{{ __('ელექტრონული დოკუმენტბრუნვა') }}</li>
+            <li>{{ __('შესყიდვების პროცესების მართვა') }}</li>
+            <li>{{ __('მარაგების კონტროლი და მართვა') }}</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <p class="text-xl text-center font-bold">
+            {{ __('ჩვენი უპირატესობებია') }}:
+        </p>
+        <ul class="list-disc list-inside mt-6 space-y-3 max-w-xl mx-auto">
+            <li>{{ __('მარტივი ინტერფეისი') }}</li>
+            <li>{{ __('უმოკლეს ვადებში დანერგვა') }}</li>
+            <li>{{ __('მომხმარებელზე მორგებული პირობები და  ფასები') }}</li>
+        </ul>
+    </div>
+
+
+    <div class="card">
+        <p class="text-xl text-center font-bold">
+            {{ __('პროგრამა "არემარე" გათვლილია ნებისმიერი ტიპის და სიდიდის ბიზნესის მართვაზე როგორც 10 კაცამდე, ასევე 100, 150 და მეტი ადამიანური რესურსის შემთხვევაში') }}
         </p>
     </div>
+
+    <div class="card">
+        <p class="text-xl text-center font-bold">
+            {{ __('სამომავლო გეგმები') }}:
+        </p>
+        <ul class="list-disc list-inside mt-6 space-y-3 max-w-xl mx-auto">
+            <li>{{ __('ბუღალტრული და ფინანსური აღრიცხვის მოდულების შექმნა') }}</li>
+            <li>{{ __('ბიზნესის მართვის სრული ERP პროგრამის შექმნა') }}</li>
+        </ul>
+    </div>
+
+    {{-- <!-- Plans -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
         @foreach ($plans as $name => $plan)
             <x-plan-card :name="$name" :price="$plan['price']" :description="$plan['description']" />
         @endforeach
-    </div>
+    </div> --}}
+
     {{-- TYPED --}}
     <script>
         var options = {
